@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ecoventure</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <script type="text/javascript">
+        function toggle(on, off) {
+            document.getElementById(off).style.display='none';
+            document.getElementById(on).style.display='block';
+            console.log('asdf');
+        }
+    </script>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="logo_text.png" style="width: 10rem;"></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#" onclick="toggle('home','projekte');">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#" onclick="toggle('projekte','home');">Projekte</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Plattformen</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Über uns</a>
+            </li>
+
+            <!--
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+            -->
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Suchen" aria-label="Search">
+            <button class="btn btn-outline-secondary" type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                </svg></button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div id="home" style="display:none">
+        <div id="carouselExampleControls" class="carousel slide d-flex justify-content-center" data-bs-ride="carousel">
+          <div class="carousel-inner" style="height: 350px;">
+            <div class="carousel-item active">
+              <img src="earth.jpg" class="d-block w-100" alt="EcoVenture">
+            </div>
+            <div class="carousel-item">
+              <img src="windrad.jpg" class="d-block w-100" alt="EcoVenture">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+
+        <div class="container my-5">
+          <h1>Kurz und bündig</h1>
+          <h2>Um was geht's?</h2>
+          <div>
+            <p class="fs-5">Investieren in nachhaltige Ideen ist spannend. Unzählige Investment Plattformen, Unternehmen und Start-ups sind auf der Suche nach Investoren - sich da einen Überblick zu schaffen ist schwierig und zeitintensiv. EcoVenture ist eine Datenbank, die Klarheit schafft. Unkompliziert und gratis.</p>
+
+
+            <!--
+            <hr class="col-1 my-4">
+            <a href="https://getbootstrap.com" class="btn btn-primary">Read the Bootstrap docs</a>
+            <a href="https://github.com/twbs/examples" class="btn btn-secondary">View on GitHub</a>
+            -->
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Projekte</h5>
+                    <p class="card-text">Hier listen wir spannende Projekte aus verschiedensten Kategorien in welche du investieren kannst. So findest sicher auch du ein passendes.</p>
+                    <a href="#" onclick="toggle('projekte','home');" class="btn btn-primary">Zu den Projekten</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Plattformen</h5>
+                    <p class="card-text">Wir geben dir eine Übersicht über spannende Plattformen, welche dir Zugang zu interessanten Projekten ermöglichen. Schau dich einmal um.</p>
+                    <a href="#" class="btn btn-primary justify-content-end">Zu den Plattformen</a>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div> <!-- end of home -->
+
+
+    <div id="projekte" style="display:block;">
+        <div>
+         <img src="windrad.jpg" class="d-block w-100 img-fluid opacity-25" style="position: absolute; z-index: -1;" alt="EcoVenture">
+        </div>
+
+        <div class="container">
+            <div class="grid">
+                <>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="d-block mt-5">
+                <h1 class="d-flex pt-5">Projekte</h1>
+                <div class="shadow p-3 mb-5 mt-5 bg-white rounded">
+                    <h4>Woher kommen unsere Daten?</h4>
+                    <p>Wir nutzen sogenanntes Web Scraping um Daten von verschiedenen Plattformen automatisiert zu sammeln. So stellen wir sicher, dass unsere Datenbank aktuell ist und du von einer real-time Übersicht profitierst.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="shadow card d-inline-block m-3 rounded" style="width: 24rem;">
+              <img src="paygreen.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Paygreen</h5>
+                <p class="card-text">Das Schweizer Startup PayGreen bekämpft den Klimawandel mit einer revolutionären Idee. Unsere alternative Bezahlmethode implementiert die tatsächlichen Umweltkosten in die Transaktionsgebühr für die Onlineshops. Damit setzen wir einen starken wirtschaftlichen Anreiz zu mehr Nachhaltigkeit. CO₂ im Voraus eliminieren, anstatt im Nachhinein teuer kompensieren.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">97.833 CHF von 500.000 CHF erreicht</li>
+                <li class="list-group-item">Mindest Investition von 13 CHF</li>
+              </ul>
+              <div class="card-body">
+                <a href="https://www.conda.ch/kampagne/paygreen2-funding/" target="blank" class="card-link justify-content-begin">Direkt zum Projekt</a>
+                <a href="#" class="card-link justify-content-end">Mehr infos</a>
+              </div>
+            </div>
+
+            <div class="shadow card d-inline-block m-3 rounded" style="width: 24rem;">
+              <img src="synergized.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Synergised</h5>
+                <p class="card-text">Synergised has achieved amazing growth to date with our community at the heart of all that we do. While our journey has mainly been organic through direct-to-consumer sales, we’re now determined to an omnichannel strategy, so that wherever a health-conscious consumer shops (online or in store), we want to be available.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">...</li>
+                <li class="list-group-item">Mindest Investition von £2.25</li>
+              </ul>
+              <div class="card-body">
+                <a href="https://www.seedrs.com/synergised/" target="blank" class="card-link justify-content-begin">Direkt zum Projekt</a>
+                <a href="#" class="card-link justify-content-end">Mehr infos</a>
+              </div>
+            </div>
+
+            <div class="shadow card d-inline-block m-3 rounded" style="width: 24rem;">
+              <img src="paygreen.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Paygreen</h5>
+                <p class="card-text">Das Schweizer Startup PayGreen bekämpft den Klimawandel mit einer revolutionären Idee. Unsere alternative Bezahlmethode implementiert die tatsächlichen Umweltkosten in die Transaktionsgebühr für die Onlineshops. Damit setzen wir einen starken wirtschaftlichen Anreiz zu mehr Nachhaltigkeit. CO₂ im Voraus eliminieren, anstatt im Nachhinein teuer kompensieren.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">97.833 CHF von 500.000 CHF erreicht</li>
+                <li class="list-group-item">Mindest Investition von 13 CHF</li>
+              </ul>
+              <div class="card-body">
+                <a href="https://www.conda.ch/kampagne/paygreen2-funding/" target="blank" class="card-link justify-content-begin">Direkt zum Projekt</a>
+                <a href="#" class="card-link justify-content-end">Mehr infos</a>
+              </div>
+            </div>
+        </div>
+
+
+
+    </div> <!-- end of projekte -->
+
+
+    <!-- Footer -->
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+
+        <p class="fst-italic col-12">Risikohinweis: Investieren ist mit Risiken verbunden und kann zum vollständigen Verlust des eingesetzten Kapitals führen.</p>
+
+        <p class="nav col-md-4 text-muted justify-content-begin">&copy; Copyright 2024 by EcoVenture</p>
+
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted" onclick="toggle('home','projekte');">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Über uns</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Kontakt</a></li>
+        </ul>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
