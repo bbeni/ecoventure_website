@@ -10,33 +10,38 @@
   <body>
 
     <script type="text/javascript">
-        function toggle(on, off) {
-            document.getElementById(off).style.display='none';
-            document.getElementById(on).style.display='block';
-            console.log('asdf');
+        const menu = ["home", "projects", "platforms", "about"];
+
+        function goto(it) {
+            for (const m of menu) {
+              console.log(m);
+              document.getElementById(m).style.display='none';
+            }
+
+            document.getElementById(it).style.display='block';
         }
     </script>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top pt-3 pb-4">
       <div class="container">
-        <a class="navbar-brand" href="#"><img src="logo_text.png" style="width: 10rem;"></a>
+        <a class="navbar-brand" href="#"><img src="logo_text.png" style="width: 12rem;"></a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mt-3 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#" onclick="toggle('home','projekte');">Home</a>
+              <a class="nav-link" aria-current="page" href="#" onclick="goto('home');">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#" onclick="toggle('projekte','home');">Projekte</a>
+              <a class="nav-link" aria-current="page" href="#" onclick="goto('projects');">Projekte</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Plattformen</a>
+              <a class="nav-link" aria-current="page" href="#" onclick="goto('platforms');">Plattformen</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Über uns</a>
+              <a class="nav-link" aria-current="page" href="#" onclick="goto('about');">Über uns</a>
             </li>
 
             <!--
@@ -71,7 +76,7 @@
       </div>
     </nav>
 
-    <div id="home" style="display:block">
+    <div id="home" style="display:block;">
         <div id="carouselExampleControls" class="carousel slide d-flex justify-content-center" data-bs-ride="carousel">
           <div class="carousel-inner" style="height: 350px;">
             <div class="carousel-item active">
@@ -114,7 +119,7 @@
                   <div class="card-body">
                     <h5 class="card-title">Projekte</h5>
                     <p class="card-text">Hier listen wir spannende Projekte aus verschiedensten Kategorien in welche du investieren kannst. So findest sicher auch du ein passendes.</p>
-                    <a href="#" onclick="toggle('projekte','home');" class="btn btn-primary">Zu den Projekten</a>
+                    <a href="#" onclick="goto('projects');" class="btn btn-primary">Zu den Projekten</a>
                   </div>
                 </div>
             </div>
@@ -132,7 +137,7 @@
     </div> <!-- end of home -->
 
 
-    <div id="projekte" style="display:none;">
+    <div id="projects" style="display: none;">
         <div>
          <img src="windrad.jpg" class="d-block w-100 img-fluid opacity-25" style="position: absolute; z-index: -1;" alt="EcoVenture">
         </div>
@@ -153,9 +158,9 @@
             </div>
         </div>
 
-        <div class="container">
-
-            <div class="shadow card d-inline-block m-3 rounded" style="width: 18rem;">
+        <div class="container d-flex">
+          <div class="row gap-4 p-0 m-0">
+            <div class="shadow card d-inline-block rounded p-0" style="width: 20rem;">
               <img src="paygreen.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Paygreen</h5>
@@ -171,7 +176,7 @@
               </div>
             </div>
 
-            <div class="shadow card d-inline-block m-3 rounded" style="width: 18rem;">
+            <div class="shadow card d-inline-block rounded p-0" style="width: 20rem;">
               <img src="synergized.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Synergised</h5>
@@ -187,7 +192,7 @@
               </div>
             </div>
 
-            <div class="shadow card d-inline-block m-3 rounded" style="width: 18rem;">
+            <div class="shadow card d-inline-block rounded p-0" style="width: 20rem;">
               <img src="paygreen.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Paygreen</h5>
@@ -202,12 +207,20 @@
                 <a href="#" class="card-link justify-content-end">Mehr infos</a>
               </div>
             </div>
+          </div>
         </div>
 
+    </div> <!-- end of projects -->
 
 
-    </div> <!-- end of projekte -->
+    <div id="platforms" style="display: none;">
+      <p class="fst-italic col-12">Risikohinweis: Investieren ist mit Risiken verbunden und kann zum vollständigen Verlust des eingesetzten Kapitals führen.</p>
+    </div> <!-- end of platforms -->
 
+
+    <div id="about" style="display: none;">
+      <p class="fst-italic col-12">Risikohinweis: Investieren ist mit Risiken verbunden und kann zum vollständigen Verlust des eingesetzten Kapitals führen.</p>
+    </div> <!-- end of about -->
 
     <!-- Footer -->
     <div class="container">
@@ -218,7 +231,7 @@
         <p class="nav col-md-4 text-muted justify-content-begin">&copy; Copyright 2024 by EcoVenture</p>
 
         <ul class="nav col-md-4 justify-content-end">
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted" onclick="toggle('home','projekte');">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted" onclick="goto('home');">Home</a></li>
           <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Über uns</a></li>
           <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
           <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Kontakt</a></li>
