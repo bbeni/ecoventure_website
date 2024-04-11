@@ -1,0 +1,112 @@
+projects:
+- categories: ''
+  description: paygreen Beschreibung
+  external_link: https://www.conda.ch/kampagne/paygreen2-funding/
+  id: '10757.0'
+  image: https://www.conda.ch/wp-content/uploads/2024/01/debbie-tea-BQfP4EYCfIU-unsplash-campaignThumbnailFallback.jpg
+  lastUpdate: '2024-03-16 04:26:06.331321'
+  min_investment: '13.0'
+  name: "PAYGREEN \u2013 NACHHALTIGE FINTECH: BEZAHLL\xD6SUNG MIT CO2-REDUKTION -\
+    \ Conda Schweiz"
+  published: 'True'
+  shortName: Paygreen
+  wpImageLink: https://ecoventure.ch/wp-content/uploads/2024/03/paygreen2-funding-1.jpg
+- categories: ''
+  description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+    At vero eos et accusam et justo duo dolores et ea rebum.
+  external_link: https://www.conda.ch/kampagne/das-zelt-funding/
+  id: '10758.0'
+  image: https://www.conda.ch/wp-content/uploads/2023/12/Vorschaubild-campaignThumbnailFallback-1.jpg
+  lastUpdate: '2024-03-16 04:26:07.992432'
+  min_investment: '50.0'
+  name: 'DAS ZELT: ENTERTAINMENT IN DER GANZEN SCHWEIZ - Conda Schweiz'
+  published: 'True'
+  shortName: Das Zelt
+  wpImageLink: https://ecoventure.ch/wp-content/uploads/2024/03/das-zelt-funding-1.jpg
+- categories: ''
+  description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+    At vero eos et accusam et justo duo dolores et ea rebum.
+  external_link: https://www.seedrs.com/homers
+  id: '10759.0'
+  image: https://seedrs.imgix.net/uploads/startup/summary/cover_image/32099/8twqxzxd63iz0ieyc1m2qzeie3jqfx8/Homers_banner_599x320px.jpg?bri=0&s=d7c74758582e6e6b03c69a5e9504fffc
+  lastUpdate: '2024-03-16 04:26:09.390078'
+  min_investment: '4.98'
+  name: HOMErs
+  published: 'True'
+  shortName: Homers
+  wpImageLink: https://ecoventure.ch/wp-content/uploads/2024/03/www.seedrs.com_-7.jpg
+- categories: ''
+  description: Beschreibung test nummer 1
+  external_link: https://www.seedrs.com/this1
+  id: '10760.0'
+  image: https://seedrs.imgix.net/uploads/startup/summary/cover_image/32488/froc99kde6iet8yavskgf2yakihnxz1/nuggshot.png?bri=0&s=523820022ba8e56965618736a90b93a6
+  lastUpdate: '2024-03-16 04:26:10.566287'
+  min_investment: ''
+  name: "THIS\u2122"
+  published: 'True'
+  shortName: "THIS \u2013 Vegan"
+  wpImageLink: https://ecoventure.ch/wp-content/uploads/2024/03/www.seedrs.com_-8-scaled.jpg
+- categories: ''
+  description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+    At vero eos et accusam et justo duo dolores et ea rebum.
+  external_link: https://www.seedrs.com/valla
+  id: '10761.0'
+  image: https://seedrs.imgix.net/uploads/startup/summary/cover_image/32469/hpflwgwp9kkh9ozfnorznebhnphlzck/seedrs-launch-card-thumbnail.png?bri=0&s=83d3c84102d776bc073f72dc7031783d
+  lastUpdate: '2024-03-16 04:26:12.725590'
+  min_investment: '3.4'
+  name: Valla
+  published: 'True'
+  shortName: ''
+  wpImageLink: https://ecoventure.ch/wp-content/uploads/2024/03/www.seedrs.com_-9.jpg
+- categories: ''
+  description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+    At vero eos et accusam et justo duo dolores et ea rebum.
+  external_link: https://www.seedrs.com/ethosa
+  id: '10762.0'
+  image: https://seedrs.imgix.net/uploads/startup/summary/cover_image/32470/1cvh66jp4icizxgy1lubozahi3x9f4/ETHOSA__740_x_416_px___6_.png?bri=0&s=f6ed8585b62a0539204c80e38e443c27
+  lastUpdate: '2024-03-16 04:26:13.910390'
+  min_investment: '0.99'
+  name: ETHOSA
+  published: 'True'
+  shortName: ''
+  wpImageLink: https://ecoventure.ch/wp-content/uploads/2024/03/www.seedrs.com_-10.jpg
+- categories: ''
+  description: 'At vero eos et accusam et justo duo dolores et ea rebum. '
+  external_link: https://www.seedrs.com/superbutler
+  id: '10763.0'
+  image: https://seedrs.imgix.net/uploads/startup/summary/cover_image/32338/tu94skk0qyxf1x4mqjrfubzifxl81h2/card-image-370x208-Superbutler.jpg?bri=0&s=9c2fb819bc6e7a8f754d42e575a10a9a
+  lastUpdate: '2024-03-16 04:26:15.065137'
+  min_investment: '0.66'
+  name: Superbutler
+  published: 'True'
+  shortName: ''
+  wpImageLink: https://ecoventure.ch/wp-content/uploads/2024/03/www.seedrs.com_-11.jpg
+- categories: ''
+  description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+  external_link: https://www.seedrs.com/brewser
+  id: '10764.0'
+  image: https://seedrs.imgix.net/uploads/startup/summary/cover_image/32471/waqtolk1ihbcsdvgsu2p9kv5f107yq/Untitled__740_x_416_px___2_.png?bri=0&s=bd3a3c52a893d764ea6b5bdebf3f0af6
+  lastUpdate: '2024-03-16 04:26:16.269697'
+  min_investment: '38.21'
+  name: Brewser
+  published: 'True'
+  shortName: ''
+  wpImageLink: https://ecoventure.ch/wp-content/uploads/2024/03/www.seedrs.com_-12.jpg
+- categories: ''
+  description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+    At vero eos et accusam et justo duo dolores et ea rebum.
+  external_link: https://www.seedrs.com/synergised
+  id: '10765.0'
+  image: https://seedrs.imgix.net/uploads/startup/summary/cover_image/32467/gysd5hy7tdukijxb0lxz39gevphq058/Seedrs_Campaign_Card.png?bri=0&s=1a38d9e71a78ef81d9069799003d425f
+  lastUpdate: '2024-03-16 04:26:17.530511'
+  min_investment: '2.25'
+  name: Synergised
+  published: 'True'
+  shortName: ''
+  wpImageLink: https://ecoventure.ch/wp-content/uploads/2024/03/www.seedrs.com_-13.jpg

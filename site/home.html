@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ecoventure</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light pt-2 pb-2">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="images/logo_text.png" style="width: 12rem;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mt-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="projects.html">Projekte</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="platforms.html">Plattformen</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="about.html">Über uns</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Suchen" aria-label="Search">
+            <button class="btn btn-outline-secondary" type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                </svg></button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div id="home">
+        <div id="carouselExampleControls" class="carousel slide d-flex justify-content-center" data-bs-ride="carousel">
+          <div class="carousel-inner" style="height: 350px;">
+            <div class="carousel-item active">
+              <img src="images/earth.jpg" class="d-block w-100" alt="EcoVenture">
+            </div>
+            <div class="carousel-item">
+              <img src="images/windrad.jpg" class="d-block w-100" alt="EcoVenture">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+
+        <div class="container my-5">
+          <h1>Kurz und bündig</h1>
+          <h2>Um was geht's?</h2>
+          <div>
+            <p class="fs-5">Investieren in nachhaltige Ideen ist spannend. Unzählige Investment Plattformen, Unternehmen und Start-ups sind auf der Suche nach Investoren - sich da einen Überblick zu schaffen ist schwierig und zeitintensiv. EcoVenture ist eine Datenbank, die Klarheit schafft. Unkompliziert und gratis.</p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Projekte</h5>
+                    <p class="card-text">Hier listen wir spannende Projekte aus verschiedensten Kategorien in welche du investieren kannst. So findest sicher auch du ein passendes.</p>
+                    <a href="/projects.html" class="btn btn-primary">Zu den Projekten</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Plattformen</h5>
+                    <p class="card-text">Wir geben dir eine Übersicht über spannende Plattformen, welche dir Zugang zu interessanten Projekten ermöglichen. Schau dich einmal um.</p>
+                    <a href="/platforms.html" class="btn btn-primary justify-content-end">Zu den Plattformen</a>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div> <!-- end of home -->
+
+
+    <!-- Footer -->
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+
+        <p class="fst-italic col-12">Risikohinweis: Investieren ist mit Risiken verbunden und kann zum vollständigen Verlust des eingesetzten Kapitals führen.</p>
+
+        <p class="nav col-md-4 text-muted justify-content-begin">&copy; Copyright 2024 by EcoVenture</p>
+
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link px-2 text-muted">Über uns</a></li>
+          <li class="nav-item"><a href="faq.html" class="nav-link px-2 text-muted">FAQs</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link px-2 text-muted">Kontakt</a></li>
+        </ul>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
