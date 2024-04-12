@@ -18,32 +18,31 @@
         </div>
 
         <div class="container d-flex">
-          <div class="row gap-5 p-0 m-0">
+          <div class="row gap-4 p-0 m-0">
 
             <!-- Liquid Template to be filled by .rb script !! -->
             {% for p in projects %}
-            <div class="shadow card d-inline-block rounded p-0" style="width: 20rem;">
-              <div class="card-img-top" style="
-                      height: 14rem;
-                      background-color: rgb(255, 235, 220);
-                      background-image: url({{ p.image }});
-                      background-size: 100% auto;
-                      background-repeat: no-repeat;
-                      background-position: center;
-              "></div>
-              <div class="card-body">
-                <h5 class="card-title">{{p.name}}</h5>
-                <p class="card-text">{{p.description}}</p>
+              <div class="shadow card d-inline-block rounded p-0" style="width: 20rem;">
+                <div class="card-img-top bg-tertiary" style="
+                        height: 10.5rem;
+                        background-image: url({{ p.image }});
+                        background-size: 100% auto;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                "></div>
+                <div class="card-body">
+                  <h5 class="card-title">{{p.name}}</h5>
+                  <p class="card-text">{{p.description}}</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">{{p.reached}} von {{p.target}} erreicht</li>
+                  <li class="list-group-item">Mindest Investition von {{p.min_investment}}</li>
+                </ul>
+                <div class="card-body">
+                  <a href="{{p.external_link}}" target="blank" class="card-link">Direkt zum Projekt</a>
+                  <a href="#" class="card-link">Mehr infos</a>
+                </div>
               </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">{{p.reached}} von {{p.target}} erreicht</li>
-                <li class="list-group-item">Mindest Investition von {{p.min_investment}}</li>
-              </ul>
-              <div class="card-body">
-                <a href="{{p.external_link}}" target="blank" class="card-link justify-content-begin">Direkt zum Projekt</a>
-                <a href="#" class="card-link justify-content-end">Mehr infos</a>
-              </div>
-            </div>
             {% endfor %}
             <!-- Ende Liquid Template !! -->
 
