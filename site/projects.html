@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,41 +9,42 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light pt-2 pb-2">
-      <div class="container">
-        <a class="navbar-brand" href="#"><img src="images/logo_text.png" style="width: 12rem;"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary pt-2 pb-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html#"><img src="images/logo_text.png" style="width: 12rem;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mt-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="home.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="projects.html">Projekte</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="platforms.html">Plattformen</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="about.html">Über uns</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Suchen" aria-label="Search">
-            <button class="btn btn-outline-secondary" type="submit">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                </svg></button>
-          </form>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mt-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="home.html#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="projects.html#">Projekte</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="platforms.html#">Plattformen</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="about.html#">Über uns</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Suchen" aria-label="Search">
+              <button class="btn btn-outline-secondary" type="submit">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                  </svg></button>
+            </form>
+          </div>
         </div>
-      </div>
     </nav>
 
 
-    <div id="projects">
+    <!-- content is filled by .rb script-->
+        <div id="projects">
         <script type="text/javascript">
             document.body.onscroll = e => {
               var percentage = 0 + 200 * document.documentElement.scrollTop / window.innerHeight
@@ -66,10 +66,17 @@
         <div class="container d-flex">
           <div class="row gap-5 p-0 m-0">
 
-
-            <!-- Projekt Template !! -->
+            <!-- Liquid Template to be filled by .rb script !! -->
+            
             <div class="shadow card d-inline-block rounded p-0" style="width: 20rem;">
-              <img src="https://www.conda.ch/wp-content/uploads/2024/01/debbie-tea-BQfP4EYCfIU-unsplash-campaignThumbnailFallback.jpg" class="card-img-top" alt="...">
+              <div class="card-img-top" style="
+                      height: 14rem;
+                      background-color: rgb(255, 235, 220);
+                      background-image: url(https://www.conda.ch/wp-content/uploads/2024/01/debbie-tea-BQfP4EYCfIU-unsplash-campaignThumbnailFallback.jpg);
+                      background-size: 100% auto;
+                      background-repeat: no-repeat;
+                      background-position: center;
+              "></div>
               <div class="card-body">
                 <h5 class="card-title">PAYGREEN – NACHHALTIGE FINTECH: BEZAHLLÖSUNG MIT CO2-REDUKTION - Conda Schweiz</h5>
                 <p class="card-text">paygreen Beschreibung</p>
@@ -83,8 +90,16 @@
                 <a href="#" class="card-link justify-content-end">Mehr infos</a>
               </div>
             </div>
+            
             <div class="shadow card d-inline-block rounded p-0" style="width: 20rem;">
-              <img src="https://www.conda.ch/wp-content/uploads/2023/12/Vorschaubild-campaignThumbnailFallback-1.jpg" class="card-img-top" alt="...">
+              <div class="card-img-top" style="
+                      height: 14rem;
+                      background-color: rgb(255, 235, 220);
+                      background-image: url(https://www.conda.ch/wp-content/uploads/2023/12/Vorschaubild-campaignThumbnailFallback-1.jpg);
+                      background-size: 100% auto;
+                      background-repeat: no-repeat;
+                      background-position: center;
+              "></div>
               <div class="card-body">
                 <h5 class="card-title">DAS ZELT: ENTERTAINMENT IN DER GANZEN SCHWEIZ - Conda Schweiz</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
@@ -98,8 +113,16 @@
                 <a href="#" class="card-link justify-content-end">Mehr infos</a>
               </div>
             </div>
+            
             <div class="shadow card d-inline-block rounded p-0" style="width: 20rem;">
-              <img src="https://seedrs.imgix.net/uploads/startup/summary/cover_image/32099/8twqxzxd63iz0ieyc1m2qzeie3jqfx8/Homers_banner_599x320px.jpg?bri=0&s=d7c74758582e6e6b03c69a5e9504fffc" class="card-img-top" alt="...">
+              <div class="card-img-top" style="
+                      height: 14rem;
+                      background-color: rgb(255, 235, 220);
+                      background-image: url(https://seedrs.imgix.net/uploads/startup/summary/cover_image/32099/8twqxzxd63iz0ieyc1m2qzeie3jqfx8/Homers_banner_599x320px.jpg?bri=0&s=d7c74758582e6e6b03c69a5e9504fffc);
+                      background-size: 100% auto;
+                      background-repeat: no-repeat;
+                      background-position: center;
+              "></div>
               <div class="card-body">
                 <h5 class="card-title">HOMErs</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
@@ -113,8 +136,16 @@
                 <a href="#" class="card-link justify-content-end">Mehr infos</a>
               </div>
             </div>
+            
             <div class="shadow card d-inline-block rounded p-0" style="width: 20rem;">
-              <img src="https://seedrs.imgix.net/uploads/startup/summary/cover_image/32488/froc99kde6iet8yavskgf2yakihnxz1/nuggshot.png?bri=0&s=523820022ba8e56965618736a90b93a6" class="card-img-top" alt="...">
+              <div class="card-img-top" style="
+                      height: 14rem;
+                      background-color: rgb(255, 235, 220);
+                      background-image: url(https://seedrs.imgix.net/uploads/startup/summary/cover_image/32488/froc99kde6iet8yavskgf2yakihnxz1/nuggshot.png?bri=0&s=523820022ba8e56965618736a90b93a6);
+                      background-size: 100% auto;
+                      background-repeat: no-repeat;
+                      background-position: center;
+              "></div>
               <div class="card-body">
                 <h5 class="card-title">THIS™</h5>
                 <p class="card-text">Beschreibung test nummer 1</p>
@@ -128,8 +159,16 @@
                 <a href="#" class="card-link justify-content-end">Mehr infos</a>
               </div>
             </div>
+            
             <div class="shadow card d-inline-block rounded p-0" style="width: 20rem;">
-              <img src="https://seedrs.imgix.net/uploads/startup/summary/cover_image/32469/hpflwgwp9kkh9ozfnorznebhnphlzck/seedrs-launch-card-thumbnail.png?bri=0&s=83d3c84102d776bc073f72dc7031783d" class="card-img-top" alt="...">
+              <div class="card-img-top" style="
+                      height: 14rem;
+                      background-color: rgb(255, 235, 220);
+                      background-image: url(https://seedrs.imgix.net/uploads/startup/summary/cover_image/32469/hpflwgwp9kkh9ozfnorznebhnphlzck/seedrs-launch-card-thumbnail.png?bri=0&s=83d3c84102d776bc073f72dc7031783d);
+                      background-size: 100% auto;
+                      background-repeat: no-repeat;
+                      background-position: center;
+              "></div>
               <div class="card-body">
                 <h5 class="card-title">Valla</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
@@ -143,8 +182,16 @@
                 <a href="#" class="card-link justify-content-end">Mehr infos</a>
               </div>
             </div>
+            
             <div class="shadow card d-inline-block rounded p-0" style="width: 20rem;">
-              <img src="https://seedrs.imgix.net/uploads/startup/summary/cover_image/32470/1cvh66jp4icizxgy1lubozahi3x9f4/ETHOSA__740_x_416_px___6_.png?bri=0&s=f6ed8585b62a0539204c80e38e443c27" class="card-img-top" alt="...">
+              <div class="card-img-top" style="
+                      height: 14rem;
+                      background-color: rgb(255, 235, 220);
+                      background-image: url(https://seedrs.imgix.net/uploads/startup/summary/cover_image/32470/1cvh66jp4icizxgy1lubozahi3x9f4/ETHOSA__740_x_416_px___6_.png?bri=0&s=f6ed8585b62a0539204c80e38e443c27);
+                      background-size: 100% auto;
+                      background-repeat: no-repeat;
+                      background-position: center;
+              "></div>
               <div class="card-body">
                 <h5 class="card-title">ETHOSA</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
@@ -158,8 +205,16 @@
                 <a href="#" class="card-link justify-content-end">Mehr infos</a>
               </div>
             </div>
+            
             <div class="shadow card d-inline-block rounded p-0" style="width: 20rem;">
-              <img src="https://seedrs.imgix.net/uploads/startup/summary/cover_image/32338/tu94skk0qyxf1x4mqjrfubzifxl81h2/card-image-370x208-Superbutler.jpg?bri=0&s=9c2fb819bc6e7a8f754d42e575a10a9a" class="card-img-top" alt="...">
+              <div class="card-img-top" style="
+                      height: 14rem;
+                      background-color: rgb(255, 235, 220);
+                      background-image: url(https://seedrs.imgix.net/uploads/startup/summary/cover_image/32338/tu94skk0qyxf1x4mqjrfubzifxl81h2/card-image-370x208-Superbutler.jpg?bri=0&s=9c2fb819bc6e7a8f754d42e575a10a9a);
+                      background-size: 100% auto;
+                      background-repeat: no-repeat;
+                      background-position: center;
+              "></div>
               <div class="card-body">
                 <h5 class="card-title">Superbutler</h5>
                 <p class="card-text">At vero eos et accusam et justo duo dolores et ea rebum. </p>
@@ -173,8 +228,16 @@
                 <a href="#" class="card-link justify-content-end">Mehr infos</a>
               </div>
             </div>
+            
             <div class="shadow card d-inline-block rounded p-0" style="width: 20rem;">
-              <img src="https://seedrs.imgix.net/uploads/startup/summary/cover_image/32471/waqtolk1ihbcsdvgsu2p9kv5f107yq/Untitled__740_x_416_px___2_.png?bri=0&s=bd3a3c52a893d764ea6b5bdebf3f0af6" class="card-img-top" alt="...">
+              <div class="card-img-top" style="
+                      height: 14rem;
+                      background-color: rgb(255, 235, 220);
+                      background-image: url(https://seedrs.imgix.net/uploads/startup/summary/cover_image/32471/waqtolk1ihbcsdvgsu2p9kv5f107yq/Untitled__740_x_416_px___2_.png?bri=0&s=bd3a3c52a893d764ea6b5bdebf3f0af6);
+                      background-size: 100% auto;
+                      background-repeat: no-repeat;
+                      background-position: center;
+              "></div>
               <div class="card-body">
                 <h5 class="card-title">Brewser</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
@@ -188,8 +251,16 @@
                 <a href="#" class="card-link justify-content-end">Mehr infos</a>
               </div>
             </div>
+            
             <div class="shadow card d-inline-block rounded p-0" style="width: 20rem;">
-              <img src="https://seedrs.imgix.net/uploads/startup/summary/cover_image/32467/gysd5hy7tdukijxb0lxz39gevphq058/Seedrs_Campaign_Card.png?bri=0&s=1a38d9e71a78ef81d9069799003d425f" class="card-img-top" alt="...">
+              <div class="card-img-top" style="
+                      height: 14rem;
+                      background-color: rgb(255, 235, 220);
+                      background-image: url(https://seedrs.imgix.net/uploads/startup/summary/cover_image/32467/gysd5hy7tdukijxb0lxz39gevphq058/Seedrs_Campaign_Card.png?bri=0&s=1a38d9e71a78ef81d9069799003d425f);
+                      background-size: 100% auto;
+                      background-repeat: no-repeat;
+                      background-position: center;
+              "></div>
               <div class="card-body">
                 <h5 class="card-title">Synergised</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
@@ -203,7 +274,8 @@
                 <a href="#" class="card-link justify-content-end">Mehr infos</a>
               </div>
             </div>
-            <!-- Ende Projekt Template !! -->
+            
+            <!-- Ende Liquid Template !! -->
 
           </div>
         </div>
@@ -219,10 +291,10 @@
         <p class="nav col-md-4 text-muted justify-content-begin">&copy; Copyright 2024 by EcoVenture</p>
 
         <ul class="nav col-md-4 justify-content-end">
-          <li class="nav-item"><a href="home.html" class="nav-link px-2 text-muted">Home</a></li>
-          <li class="nav-item"><a href="about.html" class="nav-link px-2 text-muted">Über uns</a></li>
-          <li class="nav-item"><a href="faq.html" class="nav-link px-2 text-muted">FAQs</a></li>
-          <li class="nav-item"><a href="about.html" class="nav-link px-2 text-muted">Kontakt</a></li>
+          <li class="nav-item"><a href="home.html#" class="nav-link px-2 text-muted">Home</a></li>
+          <li class="nav-item"><a href="about.html#" class="nav-link px-2 text-muted">Über uns</a></li>
+          <li class="nav-item"><a href="faq.html#" class="nav-link px-2 text-muted">FAQs</a></li>
+          <li class="nav-item">Kontakt: info@ecoventure.ch</li>
         </ul>
       </footer>
     </div>

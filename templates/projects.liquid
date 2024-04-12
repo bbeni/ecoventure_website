@@ -1,0 +1,52 @@
+    <div id="projects">
+        <script type="text/javascript">
+            document.body.onscroll = e => {
+              var percentage = 0 + 200 * document.documentElement.scrollTop / window.innerHeight
+              document.getElementById('antipasti').style.backgroundPosition = "50% " + percentage + "%"
+            }
+        </script>
+        <div id="antipasti" style="height: min(35vw, 43vh); background-position: 50% 0%; background-size: cover; background-image:url(images/windrad.jpg)"></div>
+
+        <div class="container">
+            <div class="d-block mt-0">
+                <h1 class="d-flex pt-5">Projekte</h1>
+                <div class="shadow p-3 mb-5 mt-5 bg-white rounded-0">
+                    <h4>Woher kommen unsere Daten?</h4>
+                    <p>Wir nutzen sogenanntes Web Scraping um Daten von verschiedenen Plattformen automatisiert zu sammeln. So stellen wir sicher, dass unsere Datenbank aktuell ist und du von einer real-time Übersicht profitierst.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container d-flex">
+          <div class="row gap-5 p-0 m-0">
+
+            <!-- Liquid Template to be filled by .rb script !! -->
+            {% for p in projects %}
+            <div class="shadow card d-inline-block rounded p-0" style="width: 20rem;">
+              <div class="card-img-top" style="
+                      height: 14rem;
+                      background-color: rgb(255, 235, 220);
+                      background-image: url({{ p.image }});
+                      background-size: 100% auto;
+                      background-repeat: no-repeat;
+                      background-position: center;
+              "></div>
+              <div class="card-body">
+                <h5 class="card-title">{{p.name}}</h5>
+                <p class="card-text">{{p.description}}</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">{{p.reached}} von {{p.target}} erreicht</li>
+                <li class="list-group-item">Mindest Investition von {{p.min_investment}}</li>
+              </ul>
+              <div class="card-body">
+                <a href="{{p.external_link}}" target="blank" class="card-link justify-content-begin">Direkt zum Projekt</a>
+                <a href="#" class="card-link justify-content-end">Mehr infos</a>
+              </div>
+            </div>
+            {% endfor %}
+            <!-- Ende Liquid Template !! -->
+
+          </div>
+        </div>
+    </div> <!-- end of projects -->
